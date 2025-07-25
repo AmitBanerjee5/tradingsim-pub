@@ -1,0 +1,61 @@
+{
+  "stocktick":
+  {
+    "websocket":
+    {
+      "finhub":
+      {
+        "url": "wss://ws.finnhub.io",
+        "token": "<your token>"
+      },
+      "polygon":
+      {
+        "token": "<your token>"
+      }
+    },
+    "filereader":
+    {
+      "polygon":
+      {
+        "location": "<your file>"
+      }
+    }
+  },
+  "datarepo":
+  { 
+    "influxdb":
+    {
+      "url": "http://localhost:8086",
+      "token": "s7Vs1yBfmcLVLCg3NQbokmNsFiZjwGH0mEECcWpDkqki0yXxIcud6aQqGt9bGw75euKZ-Ki0d5Nldr4fv4_Rzw==",
+      "bucket": "amibaner-trading",
+      "org": "amibaner-org"
+    }
+  },
+  "stocks":
+  [
+    {
+      "symbol": "AAPL",
+      "fund": 1000,
+      "smootheningfactor": 0.05,
+      "riskfactor": 0.20
+    },
+    {
+      "symbol": "AMZN",
+      "fund": 1000,
+      "smootheningfactor": 0.05,
+      "riskfactor": 0.25
+    },
+    {
+      "symbol": "NVDA",
+      "fund": 1000,
+      "smootheningfactor": 0.05,
+      "riskfactor": 0.30
+    },
+    {
+      "symbol": "TSLA",
+      "fund": 1000,
+      "smootheningfactor": 0.05,
+      "riskfactor": 0.30
+    }
+  ]
+}
